@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { z } from 'genkit';
 
 export const schema = z.object({

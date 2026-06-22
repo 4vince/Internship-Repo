@@ -1,5 +1,4 @@
-import 'dotenv/config';
-import type { schema, MovieSchema, MovieListSchema, MovieComparisonSchema } from "./schema.js";
+import { MovieSchema, MovieListSchema, MovieComparisonSchema } from "./schema.js";
 import type { z } from "genkit";
 
 type MovieList = z.infer<typeof MovieListSchema>;
