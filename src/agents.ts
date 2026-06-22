@@ -41,9 +41,9 @@ Return a list of movies we have available.`,
 export async function researchAgent(query: string) {
   const result = await ai.generate({
     tools: [
-      "shopping/search_movies",
-      "shopping/compare_movies",
-      "shopping/get_reviews",
+      "movie/search_movies",
+      "movie/compare_movies",
+      "movie/get_reviews",
     ],
     prompt: `You are a movie research assistant.
 For the query "${query}":
@@ -57,7 +57,7 @@ For the query "${query}":
 
 export async function trustAgent(studioId: string) {
   const result = await ai.generate({
-    tools: ["shopping/check_studio"],
+    tools: ["movie/check_studio"],
     prompt: `You are a studio reputation agent.
 Check the reputation of studio "${studioId}".
 Report their founding year, box office rating, and academy award count.
