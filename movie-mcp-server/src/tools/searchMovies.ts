@@ -1,3 +1,6 @@
+// In-memory movie catalog search tool. Filters a hardcoded list of 10 movies
+// by title, genre, or year matching the given query string.
+
 export async function searchMovies(query: string) {
   const movies = [
     { id: "tt0111161", title: "The Shawshank Redemption", year: 1994, genre: "Drama", rating: 9.3 },

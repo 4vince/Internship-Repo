@@ -1,3 +1,7 @@
+// Orchestration flow that chains all 5 AI agents sequentially: mood detection
+// -> trend analysis -> library search -> research -> studio trust check.
+// Returns a JSON summary of all results.
+
 import { ai } from "./ai.js";
 import { z } from "genkit";
 import {

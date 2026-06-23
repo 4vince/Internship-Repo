@@ -1,3 +1,7 @@
+// MCP (Model Context Protocol) server entry point. Sets up an HTTP server that
+// exposes movie tools (search, reviews, compare, check studio) via the MCP
+// StreamableHTTP transport on port 8000.
+
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import {

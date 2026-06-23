@@ -1,3 +1,7 @@
+// Defines the AI agent functions used in the watchlist flow pipeline. Each
+// agent (moodDetector, trendAnalyzer, library, research, trust) calls
+// ai.generate() with different prompts and optional MCP tools.
+
 import { ai } from "./ai.js";
 import type { WatchlistState } from "./state.js";
 

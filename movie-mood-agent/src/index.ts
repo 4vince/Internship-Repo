@@ -1,3 +1,7 @@
+// Entry point for the movie mood agent. Spawns the MCP server as a child
+// process, waits for it to become ready, then runs the watchlist flow with
+// a user-provided query from the CLI argument.
+
 import "dotenv/config";
 import { spawn } from "node:child_process";
 import path from "node:path";

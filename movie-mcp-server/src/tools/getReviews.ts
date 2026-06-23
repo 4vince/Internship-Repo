@@ -1,3 +1,6 @@
+// In-memory critic reviews tool. Returns hardcoded reviews for a given movie
+// ID (Shawshank, Godfather, or Dark Knight). Returns empty array if not found.
+
 export async function getReviews(movieId: string) {
   const reviews: Record<string, { critic: string; score: number; summary: string }[]> = {
     tt0111161: [

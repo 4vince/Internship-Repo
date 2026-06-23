@@ -1,3 +1,7 @@
+// Genkit AI configuration. Sets up the Genkit instance with Ollama (llama3.2)
+// as the LLM provider and an MCP client plugin that connects to the local movie
+// MCP server for tool access.
+
 import { genkit } from "genkit";
 import { ollama } from "genkitx-ollama";
 import { mcpClient } from "genkitx-mcp";
